@@ -1,8 +1,12 @@
 @font-face {
     font-family: 'JosefinSans';
-    src: url('fonts/Josefin_Sans/static/JosefinSans-Regular.ttf') format('truetype');
-    font-weight: normal;
+    src: url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
     font-style: normal;
+  }
+  @font-face {
+    font-family: 'JosefinSans';
+    src: url('fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf');
+    font-style: italic;
   }
   /* 
     AÑADIR FUENTES VARIABLES
