@@ -1,7 +1,20 @@
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('fonts/Josefin_Sans/static/JosefinSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* 
+    AÑADIR FUENTES VARIABLES
+    BORDES:#16423C
+    BACKGROUND PRINCIPAL:#C4DAD2
+    BACKGROUND SECUNDARIO:#E9EFEC
+  */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #EF946C;
+    background-color: #C4DAD2;
     color: black;
+    font-family: 'JosefinSans', sans-serif;
 }
 main{
     display: flex;
@@ -12,46 +25,50 @@ main{
 
 header {
     text-align: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     color: black;
     text-decoration: underline;
+}
+
+h1,h2{
+    font-family: "Playfair", serif;
 }
 
 nav ul {
     list-style-type: none;
     padding: 1em;
-    background-color: #75b9be;
+    background-color: #E9EFEC;
     color: black;
     text-align: center;
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;
+    border: 5px solid #16423C;
     border-radius: 5px;
 }
 
 nav ul li {
     display: inline;
 }
+
 nav ul li a{
     text-decoration: none;
     color: black;
     font-size: 25px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 nav ul li a:hover{
     text-decoration: underline;
 }
 
 section {
     margin-top: 20px;
-    border: 5px solid #75b9be;
+    border: 2.5px solid #16423C;
     border-radius: 5px;
     padding-left: 1em;
-    background-color: rgb(224, 200, 171);
+    background-color: #E9EFEC;
 }
 
 section h2 {
