@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'JosefinSans';
-    src: url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
+    src:url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.woff2') ,url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
     font-style: normal;
   }
   @font-face {
@@ -9,15 +9,14 @@
     font-style: italic;
   }
   /* 
-    AÑADIR FUENTES VARIABLES
-    BORDES:#16423C
+    BORDES/TEXTO:#16423C
     BACKGROUND PRINCIPAL:#C4DAD2
     BACKGROUND SECUNDARIO:#E9EFEC
   */
 
 body {
     background-color: #C4DAD2;
-    color: black;
+    color: #16423C;
     font-family: 'JosefinSans', sans-serif;
 }
 main{
@@ -33,7 +32,6 @@ header {
 
 h1 {
     font-size: 50px;
-    color: black;
     text-decoration: underline;
 }
 
@@ -59,8 +57,8 @@ nav ul li {
 
 nav ul li a{
     text-decoration: none;
-    color: black;
     font-size: 25px;
+    color: #16423C;
 }
 
 nav ul li a:hover{
@@ -77,12 +75,10 @@ section {
 
 section h2 {
     font-size: 25px;
-    color: black;
 }
 
 section p {
     font-size: 18px;
-    color: black;
 }
 
 footer {
