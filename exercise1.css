@@ -1,22 +1,24 @@
 @font-face {
     font-family: 'JosefinSans';
-    src:url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.woff2') ,url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
+    src:url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.woff2') format("woff2"),url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf')format("ttf");
     font-style: normal;
   }
   @font-face {
     font-family: 'JosefinSans';
-    src: url('fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf');
+    src: url('fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf')format("ttf");
     font-style: italic;
   }
-  /* 
-    BORDES/TEXTO:#16423C
-    BACKGROUND PRINCIPAL:#C4DAD2
-    BACKGROUND SECUNDARIO:#E9EFEC
-  */
+:root{
+    /* Pongo 2 por si quiero cambiar el color de fuente */
+    --fuente: hsl(172, 50%, 17%);
+    --borde: hsl(172, 50%, 17%);
+    --principal: hsl(158, 23%, 81%);
+    --secundario: hsl(150, 16%, 93%);
+}
 
 body {
-    background-color: #C4DAD2;
-    color: #16423C;
+    background-color: var(--principal);
+    color: var(--fuente);
     font-family: 'JosefinSans', sans-serif;
 }
 main{
@@ -42,12 +44,11 @@ h1,h2{
 nav ul {
     list-style-type: none;
     padding: 1em;
-    background-color: #E9EFEC;
-    color: black;
+    background-color: var(--principal);
     text-align: center;
     display: flex;
     justify-content: space-around;
-    border: 5px solid #16423C;
+    border: 5px solid var(--borde);
     border-radius: 5px;
 }
 
@@ -58,7 +59,7 @@ nav ul li {
 nav ul li a{
     text-decoration: none;
     font-size: 25px;
-    color: #16423C;
+    color: var(--fuente);
 }
 
 nav ul li a:hover{
@@ -67,10 +68,10 @@ nav ul li a:hover{
 
 section {
     margin-top: 20px;
-    border: 2.5px solid #16423C;
+    border: 2.5px solid var(--borde);
     border-radius: 5px;
     padding-left: 1em;
-    background-color: #E9EFEC;
+    background-color: var(--principal);
 }
 
 section h2 {
