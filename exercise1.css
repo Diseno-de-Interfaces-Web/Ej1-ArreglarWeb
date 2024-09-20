@@ -44,12 +44,13 @@ h1,h2{
 nav ul {
     list-style-type: none;
     padding: 1em;
-    background-color: var(--principal);
+    background-color: var(--secundario);
     text-align: center;
     display: flex;
     justify-content: space-around;
     border: 5px solid var(--borde);
     border-radius: 5px;
+    box-shadow: 0 4px 8px var(--borde);
 }
 
 nav ul li {
@@ -70,8 +71,9 @@ section {
     margin-top: 20px;
     border: 2.5px solid var(--borde);
     border-radius: 5px;
+    box-shadow: 0 2px 4px var(--borde);
     padding-left: 1em;
-    background-color: var(--principal);
+    background-color: var(--secundario);
 }
 
 section h2 {
