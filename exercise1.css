@@ -29,7 +29,6 @@ body {
 main{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-grow: 1;
 }
 
@@ -50,6 +49,7 @@ nav ul {
     margin: 1em;
     list-style-type: none;
     padding: 1em;
+
     background-color: var(--secundario);
     text-align: center;
 
@@ -77,11 +77,14 @@ nav ul li a:hover{
 
 section {
     margin: 1em 1em 0 1em;
+    padding: 1em;
+
     border: 2.5px solid var(--borde);
     border-radius: 5px;
     box-shadow: 0 2px 4px var(--borde);
-    padding: 1em;
+    
     background-color: var(--secundario);
+    
     width: fit-content;
     height: fit-content;
 }
@@ -95,7 +98,6 @@ section p {
 }
 
 footer {
-    margin-top: 2em;
     text-align: center;
 }
 
