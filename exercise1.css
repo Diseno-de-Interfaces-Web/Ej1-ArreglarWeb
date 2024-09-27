@@ -84,9 +84,8 @@ section {
     box-shadow: 0 2px 4px var(--borde);
     
     background-color: var(--secundario);
-    
-    width: fit-content;
-    height: fit-content;
+    flex-grow: 1;
+    flex-basis: min-content;
 }
 
 section h2 {
